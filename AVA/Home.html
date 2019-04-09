@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device width"> 
+  <meta name="descripttion" content="State of the art workout faciity">
+  <meta name="keywords" content="gym, workout,affordable, Stateof the art">
+  <meta name="author" content="Doreen Ochung">
+  <title>Iron Throne Gym | Home</title>
+  <link rel="stylesheet" type="text/css" href="home.css">
+</head>
+<body>
+	<nav class="nav-bar">
+	<span class="nav-bar__icon"><i class="fa fa-sticky-note" aria-hidden="true"></i></span>
+	<h1 class="nav-bar__title">Iron Throne Gym</h1>
+	<ul class="nav-bar__list">
+		<li class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Search</button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			    <a href="Classes.html">Classes</a>
+			    <a href="Facilities.html">Serviices</a>
+			    <a href="Facilities.html">Faciities</a>
+			    <a href="Home.html">Contact</a>
+			    <a href="Store.html">Store</a>
+			    <a href="Store.html">Merch</a>
+			    <a href="Membership.html">Membership</a>
+			    <a href="Home.html">Location</a>
+			    <a href="Home.html">Socials</a>
+			  </div>
+		</li>
+		<li>
+			<a href="Home.html">Home</a>
+		</li>
+		<li>
+			<a href="Classes.html">Classes</a>
+		</li>
+		<li>
+			<a href="Facilities.html">Facilities</a>
+		</li>
+		<li>
+			<a href="Membership.html">Membership</a>
+		</li>
+		<li>
+			<a href="Store.html">Store</a>
+		</li>
+		<li class="nav-bar__list nav-bar__main-action">
+			<a href="index.html">Member</a>
+		</li>
+		
+	</ul>
+	</nav>
+	
+	<div class="mission">
+		<h2>About Us</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<h3>Mission Statement</h3>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<div class="socials">
+		  <h3>Find Us On social Media</h3>
+		  <a href="https://www.facebook.com"><img src="./images/fb.png"><span>Facebook</span></a>
+	      <a href="https://www.twitter.com"><img src="./images/twitter.png"><span>Twitter</span></a>
+	      <a href="https://www.plus.google.com"><img src="./images/g.png"><span>Google+</span></a>
+	      <a href="https://www.youtube.com"><img src="./images/you.png"><span>Youtube</span></a>
+	      <a href="https://www.instagram.com"><img src="./images/instagram.png"><span>Instagram</span></a>
+	      <a href="https://www.linkedin.com"><img src="./images/linkedin.png"><span>Linked In</span></a>
+	</div>
+	
+	<button class="pop-button" onclick="openBot()">IronBot Chat</button>
+	<div class="chat-popup" id="myBot">
+		
+		<iframe class="frame" src="https://bot.dialogflow.com/1db02e52-8c14-4624-a1b9-d4d9f5b959d5"></iframe>
+
+		<button type="button" class="cancel" onclick="closeBot()">Close</button>
+
+	</div>
+
+	<div class="locatiom">
+		<h3>Our Location</h3>
+		<div class="mapouter">
+			<div class="gmap_canvas">
+				<iframe width="507" height="383" id="gmap_canvas" 
+					src="https://maps.google.com/maps?q=Daystar%20uni
+					versity&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+					 scrolling="no" marginheight="0" marginwidth="0">
+				</iframe>Werbung: <a href="https://www.jetzt-drucken-lassen.de">jetzt-drucken-lassen.de</a>
+			</div>
+		</div>	
+	</div>
+
+	<script type="text/javascript" src="bot.js" ></script>
+	<script type="text/javascript" src="Search.js"></script>	
+</body>
+</html>

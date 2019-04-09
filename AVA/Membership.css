@@ -1,0 +1,337 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px solid #1161ee;
+  margin: 5rem 0;
+}
+
+li {
+  font-weight: 400;
+}
+body {
+  height: 100vh;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(0deg, #000428 0%, #004e92 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.4);
+  font-family: Arial, sans-serif;
+  transition: all 200ms ease-in-out;
+}
+.nav-bar * {
+  vertical-align: middle;
+}
+.nav-bar__title {
+  margin: 0;
+  display: inline-block;
+  color: #fff;
+  padding: 0.5rem;
+  font: 2rem/1.25 Arial, sans-serif;
+  flex: 1;
+}
+.nav-bar__icon {
+  max-width: 3rem;
+  margin-right: 0.5rem;
+}
+.nav-bar__icon .fa {
+  font-size: 2rem;
+  line-height: 1;
+  color: #1fb25b;
+}
+.nav-bar__list {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  list-style: none;
+  font-weight: 600;
+  font-size: 0;
+  text-align: right;
+  flex: 2;
+}
+.nav-bar__list li {
+  display: inline-block;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #fff;
+}
+.nav-bar__list li:hover a {
+  color: #000;
+}
+.nav-bar__list li:hover a:before {
+  content: '';
+  position: absolute;
+  top: calc(50% + 0.75rem);
+  left: 1.5rem;
+  right: 1.5rem;
+  border: 1px solid #1161ee;
+}
+.nav-bar__list li:first-child a:after {
+  display: none;
+}
+.nav-bar__list a {
+  display: block;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  position: relative;
+  text-decoration: none;
+}
+.nav-bar__list a:hover {
+  color: inherit;
+}
+.nav-bar__list a:after {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0;
+  width: 0.125rem;
+  background:#1161ee;
+}
+.nav-bar__list.nav-bar__main-action a {
+  background: #1161ee;
+  color: #fff;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+}
+.nav-bar__list.nav-bar__main-action a:hover {
+  background: #1161ee;
+  color: #fff;
+}
+.nav-bar__list.nav-bar__main-action a:before {
+  display: none;
+}
+.nav-bar__list.nav-bar__main-action a:after {
+  display: none;
+}
+.nav-bar__stickied {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0rem 1rem;
+}
+.nav-bar__stickied .nav-bar__title {
+  color: #333;
+}
+.nav-bar__stickied .nav-bar__bar {
+  background-color: #1161ee;
+}
+.nav-bar__stickied .nav-bar__list li {
+  color: #333;
+}
+.nav-bar__stickied .nav-bar__list li:hover a {
+  color: #333;
+}
+.nav-bar__stickied .nav-bar__list li:hover a:before {
+  border-color: #1161ee;
+}
+.nav-bar__stickied .nav-bar__list li:last-child a:after {
+  display: none;
+}
+.nav-bar__stickied .nav-bar__list.nav-bar__main-action a {
+  background: #0e89c5;
+  color: #fff;
+  margin: 0 0.5rem;
+  border-radius: 0.25rem;
+}
+.nav-bar__stickied .nav-bar__list.nav-bar__main-action a:after {
+  display: none;
+}
+.nav-bar__stickied .nav-bar__list.nav-bar__main-action:hover a {
+  background: #1fb25b;
+  color: #fff;
+}
+
+.add-fluff {
+  background-color: #0e2c36;
+  color: #fff;
+  padding: 1rem 10vw;
+  min-height: 200vh;
+  font: 400 1.25rem/1.6 Arial, sans-serif;
+}
+
+/*search tool*/
+.dropbtn {
+  background-color: #1161ee;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem; 
+  height: 45px;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #000428;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  /*width: 20px;*/
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #808080;
+  width: 150px;
+  overflow: auto;
+  /*border: 1px solid #ddd;*/
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  height: 10px;
+  width: 20px;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+html {
+  background: rgb(246, 248, 248);
+}
+body {
+  padding: 40px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;  
+}
+.promos {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+.promo {
+  width: 250px;
+  /*background: #0F1012; */
+  background: linear-gradient(0deg, #000428 0%, #004e92 100%);
+  color: #f9f9f9;
+  float: left;
+}
+.deal {
+  padding: 10px 0 0 0;
+}
+.deal span {
+  display: block;
+  text-align: center;
+}
+.deal span:first-of-type {
+  font-size: 23px;  
+}
+.deal span:last-of-type {
+  font-size: 13px;
+}
+.promo .price {
+  display: block;
+  width: 250px;  
+  background: #0F1012;
+  margin: 15px 0 10px 0;
+  text-align: center;
+  font-size: 23px;
+  padding: 17px 0 17px 0;
+}
+ul {
+  display: block;
+  margin: 20px 0 10px 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  color: #999999;
+}
+li {
+  display: block;
+  margin: 10px 0 0 0;
+}
+button {
+  border: none;
+  border-radius: 40px;
+  background: #1161ee;
+  color: #f9f9f9;
+  padding: 10px 37px;
+  margin: 10px 0 20px 60px;
+}
+.scale {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px 1px rgba(20, 20, 20, 0.8);
+}
+.scale button {
+  background: #1161ee;
+}
+.scale .price,
+.promo .price {
+  color: #1161ee;
+}
+.promos button :hover{
+  color: #000428:;
+}
+.pop-button{
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+.chat-popup{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.frame{
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+.frame .cancel{
+  background-color: #000428;
+}
+.frame .btn:hover, .pop-button{
+  opacity: 1;
+}

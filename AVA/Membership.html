@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device width"> 
+  <meta name="descripttion" content="State of the art workout faciity">
+  <meta name="keywords" content="gym, workout,affordable, Stateof the art">
+  <meta name="author" content="Doreen Ochung">
+  <title>Iron Throne Gym | Membership</title>
+  <link rel="stylesheet" type="text/css" href="Membership.css">
+</head>
+<body>
+	<nav class="nav-bar">
+	<span class="nav-bar__icon"><i class="fa fa-sticky-note" aria-hidden="true"></i></span>
+	<h1 class="nav-bar__title">Iron Throne Gym</h1>
+	<ul class="nav-bar__list">
+		<li class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Search</button>
+			  <div id="myDropdown" class="dropdown-content">
+			    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+			    <a href="Classes.html">Classes</a>
+			    <a href="Facilities.html">Serviices</a>
+			    <a href="Facilities.html">Faciities</a>
+			    <a href="Home.html">Contact</a>
+			    <a href="Store.html">Store</a>
+			    <a href="Store.html">Merch</a>
+			    <a href="Membership.html">Membership</a>
+			    <a href="Home.html">Location</a>
+			    <a href="Home.html">Socials</a>
+			  </div>
+		</li>
+		<li>
+			<a href="Home.html">Home</a>
+		</li>
+		<li>
+			<a href="Classes.html">Classes</a>
+		</li>
+		<li>
+			<a href="Facilities.html">Facilities</a>
+		</li>
+		<li>
+			<a href="Membership.html">Membership</a>
+		</li>
+		<li>
+			<a href="Store.html">Store</a>
+		</li>
+		<li class="nav-bar__list nav-bar__main-action">
+			<a href="index.html">Member</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="promos">  
+	<div class="promo">
+	  <div class="deal">
+	    <span>Premium</span>
+	    <span>This is really a good deal!</span>
+	  </div>
+	  <span class="price">Ksh 7000</span>
+	  <ul class="features">
+	    <li>Some great feature</li>
+	    <li>Another super feature</li>
+	    <li>And more...</li>   
+	  </ul>
+	  <button>Sign up</button>
+	</div>
+	<div class="promo scale">
+	  <div class="deal">
+	    <span>Plus</span>
+	    <span>This is really a good deal!</span>
+	  </div>
+	  <span class="price">Ksh 8000</span>
+	  <ul class="features">
+	    <li>Some great feature</li>
+	    <li>Another super feature</li>
+	    <li>And more...</li>   
+	  </ul>
+	  <button>Sign up</button>
+	</div>
+	<div class="promo">
+	  <div class="deal">
+	    <span>Basic</span>
+	    <span>Basic membership</span>
+	  </div>
+	  <span class="price">Ksh 6000</span>
+	  <ul class="features">
+	    <li>Choose the one on the left</li>
+	    <li>We need moneyy</li>
+	    <li>And more...</li>   
+	  </ul>
+	  <button>Sign up</button>
+	</div>
+</div>
+
+<button class="pop-button" onclick="openBot()">IronBot Chat</button>
+	<div class="chat-popup" id="myBot">
+		
+		<iframe class="frame" src="https://bot.dialogflow.com/1db02e52-8c14-4624-a1b9-d4d9f5b959d5"></iframe>
+
+		<button type="button" class="cancel" onclick="closeBot()">Close</button>
+
+	</div>
+
+	<script type="text/javascript" src="bot.js" ></script>	
+	<script type="text/javascript" src="Search.js"></script>	
+</body>
+</html>
